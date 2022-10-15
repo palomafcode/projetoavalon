@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 
-
+/* Medidas CSS
+  pixels: 1px
+  viewport: vw / vh (relativos)
+  fonte geral: rem (relativo) - elemento html
+  fonte do escopo: em (relativo) - elemento pai
+  %: relativa - elemento pai
+*/
 
 html {
   font-size: 80%;
 }
 
-
+/* Seletor CSS */
 body {
   font-family: 'Ropa Sans', sans-serif;
   margin: 0;
   padding: 0;
-  color: grey;
+  color: #888888;
   width: 100%;
 }
 
@@ -26,18 +32,10 @@ body > header {
   box-shadow: .1rem .1rem 1rem gray;
 }
 
-header {
+header > * {
   display: inline-block;
-  width: 100%;
-  background-color: #e06969b4;
-
+  margin: 0;
 }
-.first-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
 
 body > header > img {
   float: right;
@@ -74,7 +72,7 @@ body > main {
 
 #sales > article > footer {
   padding: 12px;
-  background-color: #E06969;
+  background-color: #EEEEEE;
 }
 
 #sales span {
@@ -119,27 +117,15 @@ body > main {
   text-shadow: black .1rem .1rem;
 }
 
-.industrial {
-  background-image: url('img/livro1.png');
-}
-
-.modern {
-  background-image: url('img/livro3.png');
-}
-
-.classic {
-  background-image: url('./img/Rectangle\ 13.png');
-}
 
 footer {
   width: 100%;
   padding: 1rem 1rem;
-  background-color: #E06969;
+  background-color: #333333;
 }
 
 footer > #gmaps {
   width: 100%;
-  background-color: white;
 }
 
 #contacts {
@@ -148,6 +134,7 @@ footer > #gmaps {
   vertical-align: center;
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media (min-width: 600px) {
   #sales > article {
     width: 40%;
@@ -158,7 +145,7 @@ footer > #gmaps {
     float: right;
   }
 
-  footer > #logo {
+  footer > #gmaps {
     width: 40%;
     display: inline-block;
   }
@@ -171,7 +158,7 @@ footer > #gmaps {
   }
 }
 
-
+/* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
   body {
     max-width: 768px;
@@ -179,13 +166,13 @@ footer > #gmaps {
   }
 }
 
-
+/* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
   body {
     max-width: 992px;
   }
 }
 
-
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {...}
 
