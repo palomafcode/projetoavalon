@@ -1,197 +1,191 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body * {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif, Helvetica, sans-serif;
-  }
-  
-  header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 
-  }
-  
-  header nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  header nav ul {
-    display: flex;
-    flex-flow: row;
-    padding: 0;
-    margin: 0;
-  
-    list-style: none;
-  }
-  
-  header nav a {
-    text-decoration: none;
-    color: darkgray;
-    display: block;
-    padding: 1rem;
-    font-weight: bold;
-  }
-  
-  .banner img {
-    width: 100%;
-    max-width: 100%;
-  }
 
-  .first-section {
+
+html {
+  font-size: 80%;
+}
+
+
+body {
+  font-family: 'Ropa Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: grey;
+  width: 100%;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body > header {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  box-shadow: .1rem .1rem 1rem gray;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  background-color: #e06969b4;
+
+}
+.first-section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
   }
 
-  .first-section > h1 {
-    font-style: normal;
-    font-weight: 800;
-    font-size: xx-large;
-    line-height: 82px;
+body > header > img {
+  float: right;
+  margin-top: 16px;
+}
+
+body > main {
+  width: 100%;
+}
+
+#banner {
+  padding: 1rem;
+  width: 100%;
+}
+
+#banner > img {
+  width: 100%;
+}
+
+#sales {
+  padding: 0 1rem;
+  width: 100%;
+}
+
+#sales > article {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#sales > article img {
+  width: 100%;
+  margin-bottom: -.5rem
+}
+
+#sales > article > footer {
+  padding: 12px;
+  background-color: #E06969;
+}
+
+#sales span {
+  font-size: 25px;
+  line-height: 27px;
+}
+
+.right {
+  border-radius: 1.5rem;
+  background-color: #51D275;
+  color: white;
+  padding: 0 1rem;
+  float: right;
+}
+
+.right.sale {
+  background-color: #DC9730;
+}
+
+#your-style {
+  padding: 0 1rem;
+}
+
+#your-style * {
+  width: 100%;
+  text-align: center;
+}
+
+.opaque {
+  opacity: 0.5; /* 0 - 1*/
+}
+
+.styles {
+  min-height: 5rem;
+  padding-top: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.styles span {
+  font-size: 1.5rem;
+  text-shadow: black .1rem .1rem;
+}
+
+.industrial {
+  background-image: url('img/livro1.png');
+}
+
+.modern {
+  background-image: url('img/livro3.png');
+}
+
+.classic {
+  background-image: url('./img/Rectangle\ 13.png');
+}
+
+footer {
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: #E06969;
+}
+
+footer > #gmaps {
+  width: 100%;
+  background-color: white;
+}
+
+#contacts {
+  color: white;
+  text-align: center;
+  vertical-align: center;
+}
+
+@media (min-width: 600px) {
+  #sales > article {
+    width: 40%;
+    display: inline-block;
   }
 
-  .container {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin: 4rem;
-  }
-  
-  .second-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    background-color: #c2175b;
+  #sales > article:last-child {
+    float: right;
   }
 
-  .second-section > h1 {
-    font-style: normal;
-    font-weight: 800;
-    font-size: xx-large;
-    line-height: 60px;
-    margin-top: 25px;
+  footer > #logo {
+    width: 40%;
+    display: inline-block;
   }
 
-  .card {
-    display: flex;
-    flex-direction: column;
+  footer > #contacts {
+    width: 40%;
+    text-align: start;
+    display: inline-block;
+    margin-left: 18%;
   }
-    
-  .card section {
-    max-height: 300px;
-    align-items: stretch;
-  }
+}
 
-  .card footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: black;
-    background-color: white;
-    padding: .8rem;
-    margin: 0;
-    font-size: .8rem;
-  }
-    
-  .card .card-title {
-    font-weight: bold;
-    margin-bottom: .5rem;
-  }
 
-  .column {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    align-self: stretch;
+@media (min-width: 768px) {
+  body {
+    max-width: 768px;
+    margin: 0 auto;
   }
+}
 
-  .third-section .details-button {
-    background-color: #c2175b;
-    padding: 1rem 2rem;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    letter-spacing: .1rem;
-    margin-bottom: 1rem;
-  }
 
-  .third-section .details {
-    flex-grow: 1;
+@media (min-width: 992px) {
+  body {
+    max-width: 992px;
   }
+}
 
-  .third-section .details h1 {
-    font-weight: 600;
-    font-size: x-large;
-    line-height: 53px;
-    margin-bottom: 35px;
-  }
-  
-  footer {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    background-color: #c2175b;
-    padding: 3rem;
-    color: white;
-    width: 100%;
-  }
 
-  .column.disclaimer {
-    display: flex;
-    flex-grow: 3;
-    align-items: flex-start;
-  }
+@media (min-width: 1200px) {...}
 
-  .column.disclaimer p {
-    max-width: 250px;
-    word-break: break-word;
-  }
-
-  .column.categories {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-grow: 2;
-  }
-
-  .column.categories nav ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  
-  .column.institucional {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-grow: 2;
-  }
-
-  .column.institucional nav ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  footer .column img {
-    max-width: 12rem;
-  }
-  
-  .column.categories nav > h1 {
-    font-size: large;
-    line-height: 35px;
-  }
