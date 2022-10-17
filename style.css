@@ -57,7 +57,10 @@ nav li a:hover{
     justify-content: center;
 }
 .header >img{
-    background-color:#A0EEC8;
+    position: relative;
+width: 991px;
+height: 90px;
+    
     padding: 4px 4px;
     display: flex;
     align-items: center;
@@ -65,12 +68,8 @@ nav li a:hover{
     text-decoration: none;
         font-size: 18px;
         font-weight: 200;
-        padding: 8px 15px;
         border-radius: 5px;
         transition: 0.3s;
-        Width:991px;
-height:90px;
-padding:8px 15px;
 
 }
 
@@ -150,7 +149,7 @@ align-items: center;
      border-radius: 5px;
 }
 .texto .titulo{
-    color: #A0EEC8;
+    color: #386C5F;
     font-size: 58px;
     font-weight: 600;
 
@@ -167,8 +166,74 @@ align-items: center;
     cursor: pointer;
     outline: none;
     color:black;
-    background-color: #69E0AE;
+    background-color: #6CD9C2AE;
 }
+footer{
+    position: absolute;
+width: 992px;
+height: 150px;
+left: 480px;
+top: 1520px;
+background: #9CD9C2;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+display: block;
+
+
+}
+.columninstitucional {
+    position: absolute;
+    display: inline-block;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 200px;
+    font-size: 12px;
+    font-weight: 100px;
+    height: 300px;
+top: 20px;
+right: 20px;
+font-family: 'Asul';
+font-style: normal;
+line-height: 27px;
+
+
+}
+.columncategories  {
+    position: absolute;
+    display: inline-block;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 200px;
+    font-size: 12px;
+    font-weight: 100px;
+    height: 300px;
+top: 20px;
+right: 300px;
+font-family: 'Asul';
+font-style: normal;
+line-height: 27px;
+}
+.columndisclaimer img{
+    width: 130px;
+    top: 20px;
+}
+.siganos {
+    position: absolute;
+    display: inline-block;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 200px;
+    font-size: 12px;
+    font-weight: 100px;
+    height: 300px;
+top: 7px;
+right: 600px;
+font-family: 'Asul';
+font-style: normal;
+line-height: 27px;
+}
+
 .mobile-menu{
     display: none;
 }
