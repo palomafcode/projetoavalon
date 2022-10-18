@@ -6,14 +6,9 @@
     box-sizing: border-box;
 }
 nav{
-    background-color: #e5a0ee;
-    padding: 10px 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-nav{
-    background-color:#FFFFFF;
+    
+
+    background-color:white;
     padding: 4px 4px;
     display: flex;
     align-items: center;
@@ -57,11 +52,10 @@ nav li a:hover{
     justify-content: center;
 }
 .header >img{
-    position: relative;
+position: absolute;
 width: 991px;
 height: 90px;
-    
-    padding: 4px 4px;
+     padding: 4px 4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,27 +66,72 @@ height: 90px;
         transition: 0.3s;
 
 }
+#headerinicial >img{
+    position: relative;
+    width: 991px;
+height: 90px;
+    padding: 4px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+        font-size: 18px;
+        font-weight: 200;
+        border-radius: 5px;
+        transition: 0.3s;
 
+         
+    }
+#logo >img{
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    left: 900px;
+    top: 15px;
+         
+    }
+    #icon >img{
+        position: absolute;
+        width: 30px;
+        height: 25px;
+        left: 1700px;
+        top: 17px;
+             
+        }
 
-.container > img {
+.container >img {
 position: absolute;
 width: 300px;
 height: 400px;
 padding: 8px 15px;
 top: 200px;
-right: 900px;
+right: 800px;
+left: 1130px;
  font-size: 18px;
  font-weight: 200;
 padding: 8px 15px;
  border-radius: 5px;
   
 }
+.container2 >img{
+    position:absolute;
+    width: 992px;
+    height: 400px;
+    top: 1135px;
+    right: 895.9px;
+     font-size: 18px;
+     font-weight: 200;
+    padding: 8px 15px;
+     border-radius: 5px;
+     background-color:white;
+      
+    }
 
 .título{
 position: absolute;
-width: 783.09px;
+width: 700px;
 height: 90.4px;
-right: 108px;
+right: 600px;
 top:170px;
 font-family: 'Asul';
 font-style: normal;
@@ -110,7 +149,7 @@ position: absolute;
 width: 400px;
 height: 300px;
 top: 270px;
-right: 500px;
+right: 920px;
 font-family: 'Asul';
 font-style: normal;
 font-weight: 200;
@@ -126,8 +165,8 @@ align-items: center;
     height: 200px;
     padding: 8px 15px;
     top: 200px;
-    left: 560px;;
-    right: 900px;
+    left: 950px;;
+    right: 800px;
      font-size: 18px;
      font-weight: 200;
     padding: 8px 15px;
@@ -140,39 +179,33 @@ align-items: center;
     width: 200px;
     height: 180px;
     padding: 8px 15px;
-    top: 400px;
-    left: 560px;;
-    right: 900px;
+    top: 420px;
+    left: 945px;;
+    right: 800px;
      font-size: 18px;
      font-weight: 200;
     padding: 8px 15px;
      border-radius: 5px;
 }
-.texto .titulo{
-    color: #386C5F;
-    font-size: 58px;
-    font-weight: 600;
 
-}
 .texto .botoes button{
     height: 55px;
     width: 170px;
     border-radius: 5px;
     border: 0;
-    margin: 0 10px;
+    top: 10px;
     font-size: 20px;
     font-weight: 500;
     padding: 0 10px;
-    cursor: pointer;
     outline: none;
     color:black;
-    background-color: #6CD9C2AE;
+    background-color: #4EC16E;
 }
 footer{
     position: absolute;
 width: 992px;
 height: 150px;
-left: 480px;
+left: 896px;
 top: 1520px;
 background: #9CD9C2;
 margin: 0;
@@ -188,8 +221,8 @@ display: block;
     align-items: flex-start;
     justify-content: flex-start;
     width: 200px;
-    font-size: 12px;
-    font-weight: 100px;
+    font-size: 8px;
+    font-weight: 90px;
     height: 300px;
 top: 20px;
 right: 20px;
@@ -199,26 +232,59 @@ line-height: 27px;
 
 
 }
-.columncategories  {
+.columnpagamento  {
     position: absolute;
     display: inline-block;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 200px;
-    font-size: 12px;
-    font-weight: 100px;
-    height: 300px;
+    width: 300px;
+    font-size: 8px;
+    font-weight: 90px;
+    height: 200px;
 top: 20px;
 right: 300px;
-font-family: 'Asul';
+font-family: 'poppins';
 font-style: normal;
-line-height: 27px;
+text-decoration: none;
 }
-.columndisclaimer img{
+#elo{
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 30px;
+    top: 40px;
+}    
+#master{
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 14px;
+    top: 40px;
+    }    
+    #visa{
+        position: absolute;
+        width: 30px;
+        height: 20px;
+        left: 90px;
+        top: 10px;
+        }    
+        #boleto{
+            position: absolute;
+            width: 20px;
+            height: 10px;
+            left: 80px;
+            top: 10px;
+            }    
+
+.columndisclaimer > img {
+    position: relative;
     width: 130px;
+    height: 90px;
     top: 20px;
+   
 }
-.siganos {
+
+.redes {
     position: absolute;
     display: inline-block;
     align-items: flex-start;
@@ -243,8 +309,7 @@ line-height: 27px;
       margin: 0 auto;
     }
   }
-  
-  /* Large devices (laptops/desktops, 992px and up) */
+ 
   @media (min-width: 992px) {
     body {
       max-width: 992px;
